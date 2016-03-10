@@ -1,0 +1,16 @@
+package observer.weather;
+
+/**
+ * Created by xulinchao on 2016/3/10.
+ */
+public class WeatherStation {
+    public static void main(String[] args) {
+        WeatherData weatherData=new WeatherData();
+        ForcastDisplay forcastDisplay=new ForcastDisplay(weatherData);
+        StatisticsDisplay statisticsDisplay=new StatisticsDisplay(weatherData);
+        CurrentConditionDisplay currentConditionDisplay=new CurrentConditionDisplay(weatherData);
+        weatherData.setMeasurements(80,65,34f);
+        weatherData.setMeasurements(82,70,29.2f);
+        weatherData.setMeasurements(78,90,29.2f);
+    }
+}

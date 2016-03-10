@@ -1,0 +1,10 @@
+Watcher Design pattern
+总结：
+1.自己定义观察者模式，
+首先创建主题接口（interface subject），以供继承，
+其中subject至少要实现注册观察者registerObserver（），移除观察者removeObserver（），
+通知观察者notifyObserver（）;
+创建观察者接口，interface Observer，以供子类继承使用，其中要实现方法为update（）;
+
+2.使用java jdk中的api来实现观察者模式，此时Observable类（作用类似于subject接口），以及Observer接口，此时只要重写更新方法即可，
+因为registerObserver，removeObserver，notifyObserver已经在Observable类中定义了

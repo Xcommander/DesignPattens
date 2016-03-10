@@ -20,6 +20,11 @@ public class DuckTest extends Duck {
 
                 System.out.println("I can quack");
             }
+
+            @Override
+            public void xlc() {
+
+            }
         });
         duckTest.performFly();
         duckTest.performQuack();

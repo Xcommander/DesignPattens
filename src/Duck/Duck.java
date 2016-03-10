@@ -14,35 +14,45 @@ public abstract class Duck {
 
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
-    public Duck(){
+
+    public Duck() {
 
     }
+
     public abstract void display();
-    public void performFly(){
+
+    public void performFly() {
         flyBehavior.fly();
     }
-    public void performQuack(){
+
+    public void performQuack() {
         quackBehavior.quack();
     }
 
 
-
 }
-interface FlyBehavior{
-     void fly();
-    default void xlc(){
+
+interface FlyBehavior {
+    void fly();
+
+    default void xlc() {
         System.out.println("1111");
     }
 }
+
 interface QuackBehavior {
-     void quack();
+    void quack();
+
+    void xlc();
 }
-class x implements  FlyBehavior{
+
+class x implements FlyBehavior {
 
     @Override
     public void fly() {
 
     }
+
     {
         xlc();
     }
