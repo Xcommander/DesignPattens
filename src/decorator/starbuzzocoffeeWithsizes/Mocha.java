@@ -1,7 +1,5 @@
 package decorator.starbuzzocoffeeWithsizes;
 
-import decorator.starbuzzoffee.Beverage;
-import decorator.starbuzzoffee.CondimentDecorator;
 
 /**
  * Created by xulinchao on 2016/3/12.

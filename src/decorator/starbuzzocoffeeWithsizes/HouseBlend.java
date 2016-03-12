@@ -1,11 +1,11 @@
 package decorator.starbuzzocoffeeWithsizes;
 
-import decorator.starbuzzoffee.Beverage;
+
 
 /**
  * Created by xulinchao on 2016/3/12.
  */
-public class HouseBlend extends decorator.starbuzzocoffeeWithsizes.Beverage {
+public class HouseBlend extends Beverage {
     public HouseBlend(){
         description="HouseBlend";
     }

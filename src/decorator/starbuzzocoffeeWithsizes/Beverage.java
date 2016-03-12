@@ -13,14 +13,14 @@ public abstract class Beverage {
 
     public String description="Unknow Beverage";
 
-    public String getSize() {
+    public enum Size{TALL,GRANDE,VENTI};
+    Size size=Size.TALL;
+
+    public Size getSize() {
         return size;
     }
 
-    public String size;
-
-    public void setSize(String size) {
+    public void setSize(Size size) {
         this.size = size;
     }
-
 }
